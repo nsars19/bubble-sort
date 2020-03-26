@@ -7,9 +7,8 @@ def bubble_sort arr
     arr.each_with_index do |e, i|
       next if e == arr.last
       arr[i], arr[i + 1] = arr[i + 1], arr[i] if e > arr[i + 1]
-      puts "#{arr}"
     end
   end
 end
-bubble_sort (array_generator(5).shuffle)
+bubble_sort(array_generator(5).shuffle)
 #puts bubble_sort(array_generator(10).shuffle)
