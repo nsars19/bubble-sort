@@ -9,6 +9,8 @@ def bubble_sort arr
       arr[i], arr[i + 1] = arr[i + 1], arr[i] if e > arr[i + 1]
     end
   end
+
+  puts "#{arr}"
 end
-bubble_sort(array_generator(5).shuffle)
-#puts bubble_sort(array_generator(10).shuffle)
+
+puts bubble_sort(array_generator(10))
